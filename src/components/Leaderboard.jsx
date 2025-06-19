@@ -9,9 +9,13 @@ function Leaderboard() {
   const itemsPerPage = 5;
 
   useEffect(() => {
-    const data = JSON.parse(localStorage.getItem("leaderboard")) || [];
-    setEntries(data);
-  }, []);
+  const raw = JSON.parse(localStorage.getItem("leaderboard") || "[]");
+  const filtered = raw.filter(
+    (entry) => typeof entry === "object" && entry !== null && "name" in entry
+  );
+  setEntries(filtered);
+}, []);
+
 
   const filteredEntries = entries.filter((entry) =>
     entry.name.toLowerCase().includes(searchQuery.toLowerCase())
