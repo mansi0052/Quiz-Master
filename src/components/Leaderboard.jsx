@@ -17,9 +17,14 @@ function Leaderboard() {
 }, []);
 
 
-  const filteredEntries = entries.filter((entry) =>
+const filteredEntries = entries.filter(
+  (entry) =>
+    entry &&
+    typeof entry === "object" &&
+    typeof entry.name === "string" &&
     entry.name.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+);
+
 
   const sortedEntries = [...filteredEntries].sort((a, b) => {
     if (sortOption === "score") return b.score - a.score;
