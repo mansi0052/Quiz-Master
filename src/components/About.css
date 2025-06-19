@@ -1,0 +1,44 @@
+.about-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  color: #fff;
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.about-section {
+  margin-bottom: 2rem;
+}
+
+.about-section h2 {
+  color: #ffd700;
+}
+
+ul {
+  list-style: square;
+  padding-left: 1.5rem;
+}
+
+.meme-section {
+  text-align: center;
+}
+
+.meme {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 1rem 0;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+.caption {
+  font-style: italic;
+  color: #ccc;
+}
+
+.about-footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-weight: bold;
+}

@@ -1,0 +1,36 @@
+.leaderboard-container {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.leaderboard-container h2 {
+  margin-bottom: 1.5rem;
+}
+
+.leaderboard-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.leaderboard-container th,
+.leaderboard-container td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+.leaderboard-container th {
+  background-color: #f4f4f4;
+}
+
+.back-home {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}

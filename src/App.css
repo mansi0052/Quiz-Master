@@ -1,0 +1,50 @@
+/* Reset basic layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Main App container */
+main {
+  padding: 2rem;
+  min-height: calc(100vh - 80px); /* Adjust if navbar height is different */
+}
+
+/* Buttons (general style for reuse) */
+button,
+.start-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover,
+.start-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Headings and spacing */
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+
+section {
+  margin: 2rem 0;
+}
