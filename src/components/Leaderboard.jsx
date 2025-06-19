@@ -8,29 +8,24 @@ function Leaderboard() {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;
 
-  useEffect(() => {
+useEffect(() => {
   const raw = JSON.parse(localStorage.getItem("leaderboard") || "[]");
-  const filtered = raw.filter(
-    (entry) => typeof entry === "object" && entry !== null && "name" in entry
-  );
+
+  const filtered = Array.isArray(raw)
+    ? raw.filter(
+        (entry) =>
+          entry &&
+          typeof entry === "object" &&
+          typeof entry.name === "string"
+      )
+    : [];
+
   setEntries(filtered);
 }, []);
 
-
-const filteredEntries = entries.filter(
-  (entry) =>
-    entry &&
-    typeof entry === "object" &&
-    typeof entry.name === "string" &&
-    entry.name.toLowerCase().includes(searchQuery.toLowerCase())
+const filteredEntries = entries.filter((entry) =>
+  entry.name?.toLowerCase().includes(searchQuery.toLowerCase())
 );
-
-
-  const sortedEntries = [...filteredEntries].sort((a, b) => {
-    if (sortOption === "score") return b.score - a.score;
-    if (sortOption === "time") return parseFloat(a.timeTaken) - parseFloat(b.timeTaken);
-    return 0;
-  });
 
   const totalPages = Math.ceil(sortedEntries.length / itemsPerPage);
   const paginatedEntries = sortedEntries.slice(
