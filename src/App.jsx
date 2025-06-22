@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import AddPlayerForm from "./components/AddPlayerForm";
-import QuizEngine from "./components/quizEngine";
+import QuizEngine from "./components/QuizEngine";
 import ScoreSummary from "./components/scoreSummary";
 import Leaderboard from "./components/LeaderBoard";
 import AboutPage from "./components/AboutPage";
