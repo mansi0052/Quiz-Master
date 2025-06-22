@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
-import Hero from "./components/hero";
+import Hero from "./components/Hero";
 import AddPlayerForm from "./components/AddPlayerForm";
 import QuizEngine from "./components/quizEngine";
 import ScoreSummary from "./components/scoreSummary";
