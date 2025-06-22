@@ -1,8 +1,7 @@
-// src/App.jsx
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import Hero from "./components/hero";
 import AddPlayerForm from "./components/AddPlayerForm";
 import QuizEngine from "./components/quizEngine";
