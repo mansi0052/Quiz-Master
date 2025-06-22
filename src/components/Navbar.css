@@ -21,7 +21,7 @@
 .nav-links {
   display: flex;
   gap: 2rem;
-  margin-left: 55rem;
+  margin-left: 45rem;
   flex-grow: 1;
 }
 
@@ -45,7 +45,6 @@
   cursor: pointer;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
   .hamburger {
     display: block;

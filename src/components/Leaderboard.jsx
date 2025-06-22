@@ -27,6 +27,12 @@ const filteredEntries = entries.filter((entry) =>
   entry.name?.toLowerCase().includes(searchQuery.toLowerCase())
 );
 
+const sortedEntries = [...filteredEntries].sort((a, b) => {
+  if (sortOption === "score") return b.score - a.score;
+  if (sortOption === "time") return a.timeTaken - b.timeTaken;
+  return 0;
+});
+
   const totalPages = Math.ceil(sortedEntries.length / itemsPerPage);
   const paginatedEntries = sortedEntries.slice(
     (currentPage - 1) * itemsPerPage,
