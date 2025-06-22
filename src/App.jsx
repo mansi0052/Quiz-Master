@@ -6,7 +6,7 @@ import Hero from "./components/Hero";
 import AddPlayerForm from "./components/AddPlayerForm";
 import QuizEngine from "./components/QuizEngine";
 import ScoreSummary from "./components/ScoreSummary";
-import Leaderboard from "./components/LeaderBoard";
+import Leaderboard from "./components/Leaderboard";
 import AboutPage from "./components/AboutPage";
 import NotFound from "./components/NotFound";
 
